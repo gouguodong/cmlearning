@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - db_cmlearning@localhost" uuid="a7c825ae-8a05-4fc5-a417-289626f621bf">
+    <database-info product="MySQL" version="5.0.41-community-nt" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="db_cmlearning"/>
+    <table name="exercise_type" schema="" catalog="db_cmlearning" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="5Lmg6aKY57G75Z6LaWQ=" autoIncrement="true"/>
+      <column name="type_name" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="5Lmg6aKY57G75Z6L5ZCN"/>
+      <column name="create_by" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="create_date" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Jyc="/>
+      <column name="update_by" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="update_date" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Jyc="/>
+      <column name="del_flag" sqlType="VARCHAR" precision="1" scale="0" nullable="true" jdbcType="12" def="JzAn" remarks="5Yig6Zmk5qCH6K6w77yIMO+8muacquWIoOmZpO+8iQ=="/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="exercises" schema="" catalog="db_cmlearning" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="6aKY55uuaWQ=" autoIncrement="true"/>
+      <column name="number" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="6aKY55uu57yW5Y+3"/>
+      <column name="analysis" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12" remarks="6aKY55uu5YiG5p6Q"/>
+      <column name="description" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="6aKY55uu5o+P6L+w"/>
+      <column name="code" sqlType="TEXT" precision="65535" scale="0" nullable="true" jdbcType="-1" remarks="6aKY55uu5rqQ56CB"/>
+      <column name="study_flag" sqlType="VARCHAR" precision="1" scale="0" nullable="false" jdbcType="12" def="JzAn" remarks="6aKY55uu5a2m5Lmg54q25Ya177yIMO+8muacquWtpuS5oO+8jDHvvJrlt7LlrabkuaDvvIwy77ya5pS26JeP77yJ"/>
+      <column name="del_flag" sqlType="VARCHAR" precision="1" scale="0" nullable="true" jdbcType="12" def="JzAn" remarks="5Yig6Zmk5qCH6K6w77yIMO+8muacquWIoOmZpO+8jDHvvJrlt7LliKDpmaTvvIk="/>
+      <column name="remarks" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12" remarks="5aSH5rOo"/>
+      <column name="create_by" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="create_date" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Jyc="/>
+      <column name="update_by" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="update_date" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Jyc=" remarks="5pu05paw5pe26Ze0"/>
+      <column name="exercise_type_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="6aKY55uu57G75Z6LaWQ="/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="grade" schema="" catalog="db_cmlearning" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" precision="11" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="5bm057qn5ZCN"/>
+      <column name="pro_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="5LiT5LiaaWQ="/>
+      <column name="remarks" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12" remarks="5aSH5rOo"/>
+      <column name="del_flag" sqlType="VARCHAR" precision="1" scale="0" nullable="false" jdbcType="12" def="JzAn" remarks="5Yig6Zmk5qCH6K6w"/>
+      <column name="create_by" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="create_date" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Jyc="/>
+      <column name="update_by" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="update_date" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Jyc="/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="manager" schema="" catalog="db_cmlearning" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="566h55CG5ZGY77yI55So5oi35ZCN77yJ"/>
+      <column name="password" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="5a+G56CB"/>
+      <column name="tellphone" sqlType="VARCHAR" precision="11" scale="0" nullable="true" jdbcType="12" remarks="55S16K+d"/>
+      <column name="remarks" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12" remarks="5aSH5rOo"/>
+      <column name="del_flag" sqlType="VARCHAR" precision="1" scale="0" nullable="false" jdbcType="12" def="JzAn" remarks="5Yig6Zmk5qCH6K6w"/>
+      <column name="create_by" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="create_date" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Jyc="/>
+      <column name="update_by" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="update_date" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Jyc="/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="profession" schema="" catalog="db_cmlearning" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" precision="11" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="5LiT5Lia5ZCN56ew"/>
+      <column name="remarks" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="del_flag" sqlType="VARCHAR" precision="1" scale="0" nullable="false" jdbcType="12" def="JzAn" remarks="5Yig6Zmk5qCH6K6w"/>
+      <column name="create_by" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="create_date" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Jyc="/>
+      <column name="update_by" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="update_date" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Jyc="/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="student" schema="" catalog="db_cmlearning" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="5a2m55SfaWQ=" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="5a2m55Sf5aeT5ZCN"/>
+      <column name="number" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="5a2m5Y+377yI5ZSv5LiA77yJ"/>
+      <column name="password" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="5a+G56CB"/>
+      <column name="grade_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="54+t57qn"/>
+      <column name="remarks" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="del_flag" sqlType="VARCHAR" precision="1" scale="0" nullable="false" jdbcType="12" def="JzAn" remarks="5Yig6Zmk5qCH5b+X77yIJzEnOuWIoOmZpO+8iQ=="/>
+      <column name="create_by" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="5Yib5bu65Lq6"/>
+      <column name="create_date" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Jyc=" remarks="5Yib5bu65pe26Ze0"/>
+      <column name="update_by" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="5pu05paw6ICF"/>
+      <column name="update_date" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="Jyc=" remarks="5pu05paw5pe26Ze0"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+  </data-source>
+</component>
